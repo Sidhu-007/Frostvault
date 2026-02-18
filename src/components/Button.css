@@ -1,0 +1,55 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 4px;
+    transition: all var(--transition-fast);
+    position: relative;
+    overflow: hidden;
+    gap: 0.5rem;
+}
+
+/* Primary Button - Glacier Blue */
+.btn-primary {
+    background: var(--primary);
+    color: var(--dark-bg);
+    box-shadow: 0 0 15px rgba(79, 195, 247, 0.3);
+}
+
+.btn-primary:hover {
+    background: var(--highlight);
+    box-shadow: 0 0 25px rgba(79, 195, 247, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Secondary Button - Outline Style */
+.btn-secondary {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-secondary:hover {
+    background: rgba(79, 195, 247, 0.1);
+    box-shadow: 0 0 15px rgba(79, 195, 247, 0.2);
+    color: var(--highlight);
+    border-color: var(--highlight);
+}
+
+/* Institutional / Outline White */
+.btn-outline-white {
+    background: transparent;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+}
+
+.btn-outline-white:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-color: white;
+}

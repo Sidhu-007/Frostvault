@@ -1,0 +1,109 @@
+.why-us-section {
+    padding: 8rem 0;
+    background-color: var(--dark-bg);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.comparison-table {
+    max-width: 900px;
+    margin: 4rem auto 0;
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.comparison-header {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.col-frostvault {
+    color: var(--primary);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.col-standard {
+    color: #8da3b3;
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+.comparison-row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    align-items: center;
+}
+
+.comparison-row:last-child {
+    border-bottom: none;
+}
+
+.row-label {
+    font-weight: 500;
+    color: #c9d6df;
+    padding-left: 1rem;
+}
+
+.row-standard,
+.row-frostvault {
+    text-align: center;
+}
+
+.text-muted {
+    color: #5a6b7a;
+}
+
+.text-red {
+    color: #ff5252;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.row-frostvault {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+
+    .comparison-header,
+    .comparison-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .col-empty,
+    .row-label {
+        grid-column: 1 / -1;
+        text-align: center;
+        padding-bottom: 0.5rem;
+        padding-left: 0;
+        color: var(--secondary);
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+        margin-bottom: 0.5rem;
+    }
+
+    .comparison-row {
+        padding: 1rem;
+        grid-gap: 1rem;
+    }
+}

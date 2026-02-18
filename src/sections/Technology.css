@@ -1,0 +1,57 @@
+.tech-section {
+    padding: 6rem 0;
+    background-color: #0d141c;
+    /* Slightly lighter than dark-bg */
+}
+
+.tech-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem 2rem;
+}
+
+.tech-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background var(--transition-fast);
+}
+
+.tech-card:hover {
+    background: linear-gradient(90deg, rgba(79, 195, 247, 0.05), transparent);
+    border-left-color: var(--primary);
+}
+
+.tech-icon-wrapper {
+    color: var(--highlight);
+    background: rgba(79, 195, 247, 0.1);
+    padding: 12px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.tech-content h4 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+}
+
+.tech-content p {
+    font-size: 0.95rem;
+    color: #8da3b3;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+}
